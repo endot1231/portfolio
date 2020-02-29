@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import "compass/css3";
+body
+{
+  font-family: "Kokoro";
+}
 
 .section {
     height: 100vh;
@@ -360,7 +364,7 @@ Profil
 
 .Profil__Content--item p {
     font-size: 25px;
-    font-family: "Kokoro";
+
 }
 
 #ProfilAfter {
@@ -428,7 +432,6 @@ SKILL
     text-align: center;
     display: block;
     font-size: 20px;
-    font-family: "Kokoro";
 }
 
 #SkillAfter {
@@ -643,7 +646,6 @@ SKILL
         top: 80px;
         display: block;
         font-size: 12px;
-        font-family: "Kokoro";
     }
 
     .chart h3 {
