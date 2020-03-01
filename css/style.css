@@ -389,6 +389,12 @@ SKILL
     text-align: center;
 }
 
+.SKill__Contents-item
+{
+  display: flex;
+}
+
+
 .SKill__Contents {
     width: 1024px;
     height: 100%;
@@ -621,26 +627,28 @@ SKILL
     }
 
     .Profil__Content--img {
-        width: 100px;
-        height: 100px;
+        width:  35vh;
+        height: 35vh
     }
 
     .Content--Title {
         font-size: 20px;
         margin-bottom: 0px;
     }
-
+  
     .charts1 {
         flex-wrap: wrap;
+        height: 45vh;
     }
 
     .charts2 {
-        width: 100%;
+        width: 100vw;
+        height: 45vh;
     }
 
     .chart {
-        width: 100px;
-        height: 100px;
+        width: 30vw;
+        height: 40vw;
     }
 
     .chart p {
