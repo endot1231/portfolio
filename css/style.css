@@ -10,7 +10,7 @@ body
     width: 100vw;
 }
 
-.Content--Title {
+.Content__Title {
     font-size: 50px;
     text-align: center;
     text-decoration: underline;
@@ -18,12 +18,12 @@ body
     padding-top: 0px;
 }
 
-.Work__Contents .Content--Title {
+.Work__Contents .Content__Title {
     padding-top: 20px;
 }
 
 
-.Contact__Contents--item a {
+.Contact__Contents__item a {
     color: white;
 }
 
@@ -44,7 +44,7 @@ Top
     color: white;
 }
 /*
-.Top--title{
+.Top__title{
     color:white;
     font-size:100px;
     position:relative;
@@ -54,7 +54,7 @@ Top
     font-family: 'Varela', sans-serif;
   }
 */
-  .Top--title {/*基本設定*/
+  .Top__title {/*基本設定*/
     color: white;
     font-size: 100px;
     position: relative;
@@ -128,7 +128,7 @@ Top
       clip: rect(14px, 9999px, 57px, 0);
     }
   }
-  .Top--title:after {/*疑似要素を加えてカスタムデータ属性の値を表示、重ねる*/
+  .Top__title:after {/*疑似要素を加えてカスタムデータ属性の値を表示、重ねる*/
     content: attr(data-text);
     position: absolute;
     left: 2px;
@@ -206,7 +206,7 @@ Top
       clip: rect(10px, 9999px, 87px, 0);
     }
   }
-  .Top--title:before {
+  .Top__title:before {
     content: attr(data-text);
     position: absolute;
     left: -2px;
@@ -349,22 +349,21 @@ Profil
     padding-top: 5%;
 }
 
-.Profil__Content--img {
+.Profil__Content__img {
     width: 300px;
     height: 300px;
     margin: auto;
     border-radius: 50%;
 }
 
-.Profil__Content--item {
+.Profil__Content__item {
     width: 600px;
     height: 300px;
     text-align: left;
 }
 
-.Profil__Content--item p {
+.Profil__Content__item p {
     font-size: 25px;
-
 }
 
 #ProfilAfter {
@@ -389,48 +388,39 @@ SKILL
     text-align: center;
 }
 
-.SKill__Contents-item
-{
-  display: flex;
-}
-
-
 .SKill__Contents {
     width: 1024px;
     height: 100%;
     margin: auto;
 }
 
-.charts1 {
-    display: flex;
-    justify-content: center;
+.SKill__Contents__item
+{
+  display: flex;
+  height: 70%;
+  width: 100%;
+}
+
+.SKill__Contents__item__chart {
+    width: 40%;
     height: 40%;
-
 }
 
-.charts2 {
-    display: flex;
-    justify-content: center;
-    height: 40%;
-
+.SKill__Contents__item__desc
+{
+  width: 50%;
+  height: 40%;
+  font-size: 25px;
 }
 
-.chart {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.chart h3 {
+.SKill__Contents__item__chart h3 {
     margin-bottom: 0;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
-.chart p {
+.SKill__Contents__item__chart p {
     position: absolute;
     left: 105px;
     bottom: 40px;
@@ -464,29 +454,29 @@ SKILL
     color: white;
 }
 
-.Work__Contents--items--desc {
+.Work__Contents__items__desc {
     width: 100%;
     margin-left: 40px;
     text-align: left;
 }
 
-.Work__Contents--items--desc h3 {
+.Work__Contents__items__desc h3 {
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
-.Work__Contents--items--desc p {
+.Work__Contents__items__desc p {
     margin-top: 0px;
 }
 
-.Work__Contents--items--desc a {
+.Work__Contents__items__desc a {
     margin-bottom: 10px;
     display: block;
     color: white;
 }
 
-.Work__Contents--items {
+.Work__Contents__items {
     display: flex;
     width: 1024px;
     height: 600px;
@@ -496,7 +486,7 @@ SKILL
     text-decoration: none;
 }
 
-.Work__Contents--items img {
+.Work__Contents__items img {
     object-fit: cover;
     width: 400px;
     height: 300px;
@@ -532,7 +522,7 @@ SKILL
 
 @media screen and (max-width:1240px) {
 
-    .Top--title {
+    .Top__title {
         font-size: 55px;
         width: 660px;
     }
@@ -544,32 +534,22 @@ SKILL
         width: 95%;
     }
 
-    .chart {
-        width: 150px;
-        height: 150px;
-    }
-
-    .chart p {
-        left: 52px;
-        bottom: -10px;
-    }
-
     .Work__Contents {
         width: 100%;
     }
 
-    .Work__Contents--items {
+    .Work__Contents__items {
         width: 90%;
         height: 100%;
         flex-direction: column;
     }
 
-    .Work__Contents--items--desc {
+    .Work__Contents__items__desc {
         margin-top: 30px;
         margin-left: 0px;
     }
 
-    .Work__Contents--items img {
+    .Work__Contents__items img {
         margin-right: auto;
         margin-left: auto;
     }
@@ -577,7 +557,7 @@ SKILL
 
 
 @media screen and (max-width:768px) {
-    .Top--title {
+    .Top__title {
         font-size: 40px;
         width: 480px;
     }
@@ -592,18 +572,18 @@ SKILL
         width: 100%;
     }
     
-    .Profil__Content--item {
+    .Profil__Content__item {
         width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .Profil__Content--item p {
+    .Profil__Content__item p {
         padding-top: 10%;
         font-size: 15px;
     }
 
-    .Profil__Content--img {
+    .Profil__Content__img {
         text-align: center;
         width: 200px;
         height: 200px;
@@ -613,7 +593,7 @@ SKILL
 
 @media screen and (max-width:480px) {
 
-    .Top--title {
+    .Top__title {
       font-size: 8vw;
       width: 97%;
       margin-left: auto;
@@ -626,32 +606,22 @@ SKILL
         vertical-align: bottom;
     }
 
-    .Profil__Content--img {
+    .Profil__Content__img {
         width:  35vh;
         height: 35vh
     }
 
-    .Content--Title {
+    .Content__Title {
         font-size: 20px;
         margin-bottom: 0px;
     }
-  
-    .charts1 {
-        flex-wrap: wrap;
-        height: 45vh;
-    }
 
-    .charts2 {
-        width: 100vw;
-        height: 45vh;
-    }
-
-    .chart {
+    .SKill__Contents__item__chart {
         width: 30vw;
         height: 40vw;
     }
 
-    .chart p {
+    .SKill__Contents__item__chart p {
         position: absolute;
         left: 36px;
         top: 80px;
@@ -659,7 +629,7 @@ SKILL
         font-size: 12px;
     }
 
-    .chart h3 {
+    .SKill__Contents__item__chart h3 {
         font-size: 15px;
     }
 
@@ -668,29 +638,29 @@ SKILL
         font-size: 1vh
     }
 
-    .Work__Contents--items {
+    .Work__Contents__items {
         margin-top: 30%;
     }
 
-    .Work__Contents--items img {
+    .Work__Contents__items img {
         width: 200px;
         height: 100px;
     }
 
-    .Work__Contents--items--desc {
+    .Work__Contents__items__desc {
         margin-top: 0px;
     }
 
-    .Work__Contents--items--desc h3 {
+    .Work__Contents__items__desc h3 {
         font-size: 15%;
         margin-bottom: 0px;
     }
 
-    .Work__Contents--items--desc p {
+    .Work__Contents__items__desc p {
         font-size: 1vh
     }
 
-    .Work__Contents--items--desc a {
+    .Work__Contents__items__desc a {
         font-size: 1vh;
     }
 }
