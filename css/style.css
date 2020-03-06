@@ -385,15 +385,16 @@ SKILL
 */
 
 .Skill {
-    height: 90vh;
+  height: 80vh;
     width: 100vw;
     text-align: center;
 }
 
-.SKill__Contents {
+#SKill__Contents__Chart
+{
+  height:60%;
     width: 1024px;
-    height: 100%;
-    margin: auto;
+  margin:auto;
 }
 
 .SKill__Contents__item
