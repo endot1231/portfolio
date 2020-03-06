@@ -346,9 +346,8 @@ Profil
     display: flex;
     justify-content: center;
     width: 1024px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 5%;
+  margin: auto;
+  height: 50vh;
 }
 
 .Profil__Content__img {
