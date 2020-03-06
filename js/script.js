@@ -4,12 +4,9 @@ new fullpage("#fullpage", {
   slidesNavigation: true,
   slidesNavPosition: 'bottom',
   dragAndMove:true,
+  verticalCentered:true,
+  parallax:true,
 
-  /*
-  origin : イベント時のセッションNO
-  destination : ?
-  direction : イベントのup down
-   */
   onLeave: function(origin, destination, direction) {
     var leavingSection = this;
     
@@ -22,121 +19,76 @@ new fullpage("#fullpage", {
   }
 });
 
-
-function create() {
-  var ctx = document.getElementById("c1");
-  var myPieChart = new Chart(ctx, {
-    type: "doughnut",
-    data: {
-      labels: "",
-      datasets: [
-        {
-          backgroundColor: ["#ee6c4d", "#e0fbfc"],
-          borderColor: ["black",'black'],
-          data: [70, 30]
-        }
-      ]
-    },
-    options: {
-      cutoutPercentage: 70,
-      maintainAspectRatio: false,
-      animation: {
-        duration: 2000,
-        easing: "easeInOutCubic"
-      }
-    }
+$(window).on('load resize', function () {
+  　canvas_resize();
+    create();
   });
 
-  var ctx = document.getElementById("c2");
-  var myPieChart = new Chart(ctx, {
-    type: "doughnut",
-    data: {
-      labels: "",
-      datasets: [
-        {
-          backgroundColor: ["#ee6c4d", "#e0fbfc"],
-          borderColor: ["black",'black'],
-          data: [50, 50]
-        }
-      ]
-    },
-    options: {
-      cutoutPercentage: 70,
-      maintainAspectRatio: false,
-      animation: {
-        duration: 2000,
-        easing: "easeInOutCubic"
-      }
-    }
-  });
+canvas_resize();
+create();
 
-  var ctx = document.getElementById("c3");
-  var myPieChart = new Chart(ctx, {
-    type: "doughnut",
-    data: {
-      labels: "",
-      datasets: [
-        {
-          backgroundColor: ["#ee6c4d", "#e0fbfc"],
-          borderColor: ["black",'black'],
-          data: [60, 40]
-        }
-      ]
-    },
-    options: {
-      cutoutPercentage: 70,
-      maintainAspectRatio: false,
-      animation: {
-        duration: 2000,
-        easing: "easeInOutCubic"
-      }
-    }
-  });
+var canvas;
+var container;
+var myChart;
 
-  var ctx = document.getElementById("c4");
-  var myPieChart = new Chart(ctx, {
-    type: "doughnut",
-    data: {
-      labels: "",
-      datasets: [
-        {
-          backgroundColor: ["#ee6c4d", "#e0fbfc"],
-          borderColor: ["black",'black'],
-          data: [40, 60]
-        }
-      ]
-    },
-    options: {
-      cutoutPercentage: 70,
-      maintainAspectRatio: false,
-      animation: {
-        duration: 2000,
-        easing: "easeInOutCubic"
-      }
-    }
-  });
-
-  var ctx = document.getElementById("c5");
-  var myPieChart = new Chart(ctx, {
-    type: "doughnut",
-    data: {
-      labels: "",
-      datasets: [
-        {
-          backgroundColor: ["#ee6c4d", "#e0fbfc"],
-          borderColor: ["black",'black'],
-          data: [40, 60]
-        }
-      ]
-    },
-    options: {
-      cutoutPercentage: 70,
-      maintainAspectRatio: false,
-      animation: {
-        duration: 2000,
-        easing: "easeInOutCubic"
-      }
-    }
-  });
-};
+function canvas_resize(){
+  canvas = document.getElementById('c1');
+  container = document.getElementById('SKill__Contents__Chart');
+  create();
+}
  
+function create() {
+  container = document.getElementById('SKill__Contents__Chart');
+
+  if(myChart)
+  {
+    myChart.destroy();
+  }
+
+   var ctx = canvas.getContext('2d');
+
+   ctx.canvas.width = container.clientWidth;
+   ctx.canvas.height = container.clientHeight;
+
+   var fontSize = Math.round(container.clientWidth / 26);
+
+   myChart = new Chart(ctx, {
+      type: "horizontalBar", // 水平棒グラフ
+      data: {
+          labels:  ["C#", "MySQL", "HTML&CSS", "Jquery", "Laravel", "Linux","GitHub","Vps","Aws"],
+          datasets: [
+              {
+                  data: [6, 4, 5, 3, 5,4,3,2,2],
+                  backgroundColor: ["#ee6c4d", "#ee6c4d", "#ee6c4d", "#ee6c4d", "#ee6c4d","#ee6c4d","#ee6c4d","#ee6c4d","#ee6c4d"]
+              }
+          ]
+      },
+
+      options: {
+        legend: {
+          display: false
+       },
+        tooltips: {enabled: false},
+        hover: {mode: null},
+          responsive: true,
+          maintainAspectRatio: true,
+
+          scales: {
+            xAxes: [ // Ｘ軸のオプション
+                {
+                    ticks: {
+                        min: 0,
+                        max:10,
+                        stepSize:1,               
+                  }
+                }
+            ],
+            yAxes: [{
+              ticks: {
+                  fontSize: fontSize
+              }
+          }]                     
+          }
+      }
+  });
+}
