@@ -556,8 +556,10 @@ SKILL
 
 @media screen and (max-width:1000px) {
 
-    .SKill__Contents {
+  #SKill__Contents__Chart
+{
         width: 95%;
+  margin:auto;
     }
 
     .Work__Contents {
