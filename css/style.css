@@ -1,36 +1,31 @@
 @charset "UTF-8";
 @import "compass/css3";
-body
+body 
 {
   font-family: "Kokoro";
 }
 
-.section {
-    height: 100vh;
-    width: 100vw;
-}
-
 .Content__Title {
-    font-size: 50px;
-    text-align: center;
-    text-decoration: underline;
+  font-size: 50px;
+  text-decoration: underline;
   position: absolute;
   text-align: center;
   width: 100%;
   top: 0%;
 }
 
-.Work__Contents .Content__Title {
-    padding-top: 20px;
-}
-
-
-.Contact__Contents__item a {
-    color: white;
-}
-
 i {
-    font-size: 60px;
+  font-size: 60px;
+}
+
+a
+{
+  color: white;
+}
+
+.color-white
+{
+  color: white;
 }
 
 
@@ -41,292 +36,281 @@ Top
 */
 
 .Top {
-    height: 90vh;
-    width: 100vw;
-    color: white;
+  height: 90vh;
+  width: 100vw;
+  color: white;
 }
-/*
-.Top__title{
-    color:white;
-    font-size:100px;
-    position:relative;
-    width: 100%;
-    text-align: center;
-    margin:0 auto;
-    font-family: 'Varela', sans-serif;
+
+.Top__title {
+  color: white;
+  font-size: 100px;
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {/*細かい動きを設定してノイズが走っているかのように動かす*/
+  0% {
+    clip: rect(77px, 9999px, 6px, 0);
   }
-*/
-  .Top__title {/*基本設定*/
-    color: white;
-    font-size: 100px;
-    position: relative;
-    width: 1200px;
-    margin: 0 auto;
-    top: 20%;
+  5% {
+    clip: rect(65px, 9999px, 70px, 0);
   }
-   
-  @keyframes noise-anim {/*細かい動きを設定してノイズが走っているかのように動かす*/
-    0% {
-      clip: rect(77px, 9999px, 6px, 0);
-    }
-    5% {
-      clip: rect(65px, 9999px, 70px, 0);
-    }
-    10% {
-      clip: rect(82px, 9999px, 82px, 0);
-    }
-    15% {
-      clip: rect(32px, 9999px, 35px, 0);
-    }
-    20% {
-      clip: rect(31px, 9999px, 49px, 0);
-    }
-    25% {
-      clip: rect(18px, 9999px, 46px, 0);
-    }
-    30% {
-      clip: rect(94px, 9999px, 64px, 0);
-    }
-    35% {
-      clip: rect(69px, 9999px, 31px, 0);
-    }
-    40% {
-      clip: rect(6px, 9999px, 72px, 0);
-    }
-    45% {
-      clip: rect(25px, 9999px, 35px, 0);
-    }
-    50% {
-      clip: rect(82px, 9999px, 26px, 0);
-    }
-    55% {
-      clip: rect(7px, 9999px, 92px, 0);
-    }
-    60% {
-      clip: rect(54px, 9999px, 30px, 0);
-    }
-    65% {
-      clip: rect(86px, 9999px, 90px, 0);
-    }
-    70% {
-      clip: rect(38px, 9999px, 65px, 0);
-    }
-    75% {
-      clip: rect(41px, 9999px, 66px, 0);
-    }
-    80% {
-      clip: rect(31px, 9999px, 37px, 0);
-    }
-    85% {
-      clip: rect(8px, 9999px, 12px, 0);
-    }
-    90% {
-      clip: rect(50px, 9999px, 69px, 0);
-    }
-    95% {
-      clip: rect(7px, 9999px, 42px, 0);
-    }
-    100% {
-      clip: rect(14px, 9999px, 57px, 0);
-    }
+  10% {
+    clip: rect(82px, 9999px, 82px, 0);
   }
-  .Top__title:after {/*疑似要素を加えてカスタムデータ属性の値を表示、重ねる*/
-    content: attr(data-text);
-    position: absolute;
-    left: 2px;
-    text-shadow: -1px 0 red;
-    top: 0;
-    color: white;
-    background: #3D5A80;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim 2s infinite linear alternate-reverse;
+  15% {
+    clip: rect(32px, 9999px, 35px, 0);
   }
-   
-  @keyframes noise-anim-2 {/*ノイズ用アニメーションその2*/
-    0% {
-      clip: rect(18px, 9999px, 13px, 0);
-    }
-    5% {
-      clip: rect(74px, 9999px, 51px, 0);
-    }
-    10% {
-      clip: rect(33px, 9999px, 65px, 0);
-    }
-    15% {
-      clip: rect(64px, 9999px, 66px, 0);
-    }
-    20% {
-      clip: rect(75px, 9999px, 6px, 0);
-    }
-    25% {
-      clip: rect(40px, 9999px, 49px, 0);
-    }
-    30% {
-      clip: rect(71px, 9999px, 1px, 0);
-    }
-    35% {
-      clip: rect(42px, 9999px, 73px, 0);
-    }
-    40% {
-      clip: rect(92px, 9999px, 57px, 0);
-    }
-    45% {
-      clip: rect(4px, 9999px, 33px, 0);
-    }
-    50% {
-      clip: rect(4px, 9999px, 34px, 0);
-    }
-    55% {
-      clip: rect(49px, 9999px, 25px, 0);
-    }
-    60% {
-      clip: rect(24px, 9999px, 44px, 0);
-    }
-    65% {
-      clip: rect(31px, 9999px, 99px, 0);
-    }
-    70% {
-      clip: rect(54px, 9999px, 83px, 0);
-    }
-    75% {
-      clip: rect(57px, 9999px, 97px, 0);
-    }
-    80% {
-      clip: rect(3px, 9999px, 15px, 0);
-    }
-    85% {
-      clip: rect(84px, 9999px, 34px, 0);
-    }
-    90% {
-      clip: rect(100px, 9999px, 88px, 0);
-    }
-    95% {
-      clip: rect(91px, 9999px, 59px, 0);
-    }
-    100% {
-      clip: rect(10px, 9999px, 87px, 0);
-    }
+  20% {
+    clip: rect(31px, 9999px, 49px, 0);
   }
-  .Top__title:before {
-    content: attr(data-text);
-    position: absolute;
-    left: -2px;
-    text-shadow: 1px 0 blue;
-    top: 0;
-    color: white;
-    background: #3D5A80;
-    overflow: hidden;
-    clip: rect(0, 900px, 0, 0);
-    animation: noise-anim-2 3s infinite linear alternate-reverse;
+  25% {
+    clip: rect(18px, 9999px, 46px, 0);
   }
-  
+  30% {
+    clip: rect(94px, 9999px, 64px, 0);
+  }
+  35% {
+    clip: rect(69px, 9999px, 31px, 0);
+  }
+  40% {
+    clip: rect(6px, 9999px, 72px, 0);
+  }
+  45% {
+    clip: rect(25px, 9999px, 35px, 0);
+  }
+  50% {
+    clip: rect(82px, 9999px, 26px, 0);
+  }
+  55% {
+    clip: rect(7px, 9999px, 92px, 0);
+  }
+  60% {
+    clip: rect(54px, 9999px, 30px, 0);
+  }
+  65% {
+    clip: rect(86px, 9999px, 90px, 0);
+  }
+  70% {
+    clip: rect(38px, 9999px, 65px, 0);
+  }
+  75% {
+    clip: rect(41px, 9999px, 66px, 0);
+  }
+  80% {
+    clip: rect(31px, 9999px, 37px, 0);
+  }
+  85% {
+    clip: rect(8px, 9999px, 12px, 0);
+  }
+  90% {
+    clip: rect(50px, 9999px, 69px, 0);
+  }
+  95% {
+    clip: rect(7px, 9999px, 42px, 0);
+  }
+  100% {
+    clip: rect(14px, 9999px, 57px, 0);
+  }
+}
+.Top__title:after {/*疑似要素を加えてカスタムデータ属性の値を表示、重ねる*/
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  background: #3D5A80;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {/*ノイズ用アニメーションその2*/
+  0% {
+    clip: rect(18px, 9999px, 13px, 0);
+  }
+  5% {
+    clip: rect(74px, 9999px, 51px, 0);
+  }
+  10% {
+    clip: rect(33px, 9999px, 65px, 0);
+  }
+  15% {
+    clip: rect(64px, 9999px, 66px, 0);
+  }
+  20% {
+    clip: rect(75px, 9999px, 6px, 0);
+  }
+  25% {
+    clip: rect(40px, 9999px, 49px, 0);
+  }
+  30% {
+    clip: rect(71px, 9999px, 1px, 0);
+  }
+  35% {
+    clip: rect(42px, 9999px, 73px, 0);
+  }
+  40% {
+    clip: rect(92px, 9999px, 57px, 0);
+  }
+  45% {
+    clip: rect(4px, 9999px, 33px, 0);
+  }
+  50% {
+    clip: rect(4px, 9999px, 34px, 0);
+  }
+  55% {
+    clip: rect(49px, 9999px, 25px, 0);
+  }
+  60% {
+    clip: rect(24px, 9999px, 44px, 0);
+  }
+  65% {
+    clip: rect(31px, 9999px, 99px, 0);
+  }
+  70% {
+    clip: rect(54px, 9999px, 83px, 0);
+  }
+  75% {
+    clip: rect(57px, 9999px, 97px, 0);
+  }
+  80% {
+    clip: rect(3px, 9999px, 15px, 0);
+  }
+  85% {
+    clip: rect(84px, 9999px, 34px, 0);
+  }
+  90% {
+    clip: rect(100px, 9999px, 88px, 0);
+  }
+  95% {
+    clip: rect(91px, 9999px, 59px, 0);
+  }
+  100% {
+    clip: rect(10px, 9999px, 87px, 0);
+  }
+}
+.Top__title:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: #3D5A80;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
 .cp_arrows *,
 .cp_arrows *:before,
 .cp_arrows *:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .cp_arrows {
-    position: absolute;
-    display: flex;
-    height: 100px;
-    margin: 2em auto;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    bottom: 20%;
-    width: 100%;
+  position: absolute;
+  display: flex;
+  height: 100px;
+  margin: 2em auto;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
 }
 
 .cp_arrows .cp_arrow {
-    position: absolute;
-    top: calc(50% - 25px);
-    left: 50%;
-    width: 40px;
-    height: 40px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 .cp_arrows .cp_arrow::before,
 .cp_arrows .cp_arrow::after {
-    position: absolute;
-    display: block;
-    width: 3px;
-    height: 30px;
-    content: '';
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    -webkit-transform: translate(-50%, -50%) rotateZ(-60deg);
-    transform: translate(-50%, -50%) rotateZ(-60deg);
-    transform-origin: bottom right;
-    border-radius: 10px;
-    background: white;
+  position: absolute;
+  display: block;
+  width: 3px;
+  height: 30px;
+  content: '';
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: translate(-50%, -50%) rotateZ(-60deg);
+  transform: translate(-50%, -50%) rotateZ(-60deg);
+  transform-origin: bottom right;
+  border-radius: 10px;
+  background: white;
 }
 
 .cp_arrows .cp_arrow::after {
-    -webkit-transform: translate(-50%, -50%) rotateZ(60deg);
-    transform: translate(-50%, -50%) rotateZ(60deg);
-    -webkit-transform-origin: bottom left;
-    transform-origin: bottom left;
+  -webkit-transform: translate(-50%, -50%) rotateZ(60deg);
+  transform: translate(-50%, -50%) rotateZ(60deg);
+  -webkit-transform-origin: bottom left;
+  transform-origin: bottom left;
 }
 
 .cp_arrows .cp_bounce {
-    -webkit-animation: arrow-move09 2s infinite ease-in-out;
-    animation: arrow-move09 2s infinite ease-in-out;
+  -webkit-animation: arrow-move09 2s infinite ease-in-out;
+  animation: arrow-move09 2s infinite ease-in-out;
 }
 
 @-webkit-keyframes arrow-move09 {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 
-    48% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
+  48% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 
-    60% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 
 @keyframes arrow-move09 {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 
-    48% {
-        -webkit-transform: translateY(-20px);
-        transform: translateY(-20px);
-    }
+  48% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 
-    60% {
-        -webkit-transform: translateY(-15px);
-        transform: translateY(-15px);
-    }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
 }
 
 #TopAfter {
-    position: absolute;
-    bottom: 0;
-    height: 10vh;
-    width: 100vw;
-    /*border-top: 100vw solid transparent;*/
-    border-left: 100vw solid transparent;
-    border-right: 10vw solid #98c1d9;
-    border-bottom: 10vw solid #98c1d9;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  /*border-top: 100vw solid transparent;*/
+  border-left: 100vw solid transparent;
+  border-right: 10vw solid #98c1d9;
+  border-bottom: 10vw solid #98c1d9;
 }
 
 /*
@@ -335,47 +319,41 @@ Profil
 
 */
 
-.Profil {
-    height: 90vh;
-    width: 100vw;
-    text-align: center;
-}
-
 .Profil__Content {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    width: 1024px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 1024px;
   margin: auto;
   height: 50vh;
 }
 
 .Profil__Content__img {
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  border-radius: 50%;
 }
 
 .Profil__Content__item {
-    width: 600px;
-    height: 300px;
-    text-align: left;
+  width: 600px;
+  height: 300px;
+  text-align: left;
   margin: auto;
 }
 
 .Profil__Content__item p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 #ProfilAfter {
-    position: absolute;
-    bottom: 0;
-    height: 10vh;
-    width: 100vw;
-    border-left: 100vw solid transparent;
-    border-right: 10vw solid #e0fbfc;
-    border-bottom: 10vw solid #e0fbfc;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  border-left: 100vw solid transparent;
+  border-right: 10vw solid #e0fbfc;
+  border-bottom: 10vw solid #e0fbfc;
 }
 
 /*
@@ -386,68 +364,32 @@ SKILL
 
 .Skill {
   height: 80vh;
-    width: 100vw;
-    text-align: center;
+  width: 100vw;
+  text-align: center;
 }
 
 #SKill__Contents__Chart
 {
   height:60%;
-    width: 1024px;
+  width: 1024px;
   margin:auto;
 }
 
-.SKill__Contents__item
-{
-  display: flex;
-  height: 70%;
-  width: 100%;
-}
-
-.SKill__Contents__item__chart {
-    width: 40%;
-    height: 40%;
-}
-
-.SKill__Contents__item__desc
-{
-  width: 50%;
-  height: 40%;
-  font-size: 25px;
-}
-
-.SKill__Contents__item__chart h3 {
-    margin-bottom: 0;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.SKill__Contents__item__chart p {
-    position: absolute;
-    left: 105px;
-    bottom: 40px;
-    margin-top: 0;
-    text-align: center;
-    display: block;
-    font-size: 20px;
-}
-
 #SkillAfter {
-    position: absolute;
-    bottom: 0;
-    height: 10vh;
-    width: 100vw;
-    border-left: 100vw solid transparent;
-    border-right: 10vw solid #ee6c4d;
-    border-bottom: 10vw solid #ee6c4d;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  border-left: 100vw solid transparent;
+  border-right: 10vw solid #ee6c4d;
+  border-bottom: 10vw solid #ee6c4d;
 }
 
 .Work {
-    height: 90vh;
-    width: 100vw;
-    text-align: center;
-    color: white;
+  height: 90vh;
+  width: 100vw;
+  text-align: center;
+  color: white;
 }
 
 .Work__desc {
@@ -462,7 +404,7 @@ SKILL
 
 .Work__Contents__items {
   display: flex;
-    width: 1024px;
+  width: 1024px;
   height: 40vh;
   margin-right: auto;
   margin-left: auto;
@@ -471,114 +413,105 @@ SKILL
 }
 
 .Work__Contents__items__desc {
-    width: 100%;
-    margin-left: 40px;
-    text-align: left;
+  width: 100%;
+  margin-left: 40px;
+  text-align: left;
 }
 
 .Work__Contents__items__desc h3 {
-    font-weight: bold;
+  font-weight: bold;
   color: white;
   font-size: 25px;
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 .Work__Contents__items__desc h4 {
   font-weight: bold;
   margin-top: 0px;
-    margin-bottom: 0px;
+  margin-bottom: 0px;
   font-size: 20px;
   color: white;
 }
 
 .Work__Contents__items__desc p {
-    margin-top: 0px;
+  margin-top: 0px;
   color: white;
 }
 
 .Work__Contents__items__desc a {
-    margin-bottom: 10px;
-    display: block;
-    color: white;
+  margin-bottom: 10px;
+  display: block;
+  color: white;
 }
 
-.Work__Contents__items {
-    display: flex;
-    width: 1024px;
-    height: 600px;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: 2;
-    text-decoration: none;
-}
 
 .Work__Contents__items img {
-    object-fit: cover;
-    width: 400px;
-    height: 300px;
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
 }
 
 #WorkAfter {
-    position: absolute;
-    bottom: 0;
-    height: 10vh;
-    width: 100vw;
-    border-left: 100vw solid transparent;
-    border-right: 10vw solid #293241;
-    border-bottom: 10vw solid #293241;
+  position: absolute;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  border-left: 100vw solid transparent;
+  border-right: 10vw solid #293241;
+  border-bottom: 10vw solid #293241;
 }
 
 .Contact__Contents {
   height: 60vh;
-    width: 100vw;
-    text-align: center;
-    color: white;
+  width: 100vw;
+  text-align: center;
+  color: white;
 }
 
 #ContactAfter {
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    height: 10vh;
-    width: 100vw;
-    border-left: 100vw solid transparent;
-    border-right: 10vw solid #3d5a80;
-    border-bottom: 10vw solid #3d5a80;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  height: 10vh;
+  width: 100vw;
+  border-left: 100vw solid transparent;
+  border-right: 10vw solid #3d5a80;
+  border-bottom: 10vw solid #3d5a80;
 }
 
 @media screen and (max-width:1240px) {
 
-    .Top__title {
-        font-size: 55px;
-        width: 660px;
-    }
+  .Top__title {
+    font-size: 55px;
+    width: 660px;
+  }
 }
 
 @media screen and (max-width:1000px) {
 
   #SKill__Contents__Chart
 {
-        width: 95%;
+  width: 95%;
   margin:auto;
-    }
+}
 
   .Work__Contents__items
   {
     width: 768px;
     flex-flow: column;
     padding: 0;
-    }
+  }
 
   .Work__Contents__items img {
     position: relative;
     margin: 0 auto;
-    }
+  }
 
-    .Work__Contents__items__desc {
+  .Work__Contents__items__desc {
     width: 100%;
-        margin-left: 0px;
+    margin-left: 0px;
     text-align: left;
-    }
+  }
 
   .Work__Contents__items__desc h3
   {
@@ -586,40 +519,35 @@ SKILL
     text-align: center;
     color: white;
     
-    }
+  }
 
 }
 
 
 @media screen and (max-width:768px) {
-    .Top__title {
-        font-size: 40px;
-        width: 480px;
-    }
+  .Top__title {
+    font-size: 40px;
+    width: 480px;
+  }
 
-    .SKill__Contents {
-        width: 100%;
-    }
-
-    .Profil__Content {
-        flex-direction: column-reverse;
-        padding-top: 10%;
-        width: 100%;
+  .Profil__Content {
+    flex-direction: column-reverse;
+    width: 100%;
     height: 70vh;
-    }
-    
-    .Profil__Content__item {
+  }
+
+  .Profil__Content__item {
     width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0px;
-    }
+  }
 
-    .Profil__Content__item p {
+  .Profil__Content__item p {
     font-size: 4vw;
-    }
+  }
 
-    .Profil__Content__img {
+  .Profil__Content__img {
     width: 30vh;
     height: 30vh;
     margin-bottom: 0px;
@@ -630,67 +558,62 @@ SKILL
     width: 95%;
     flex-flow: column;
     padding: 0;
-    }
+  }
 
   .Work__Contents__items img  {
     width: 40vh;
     height: 20vh;
     margin-bottom: 0px;
-}
+  }
 }
 
 
 @media screen and (max-width:480px) {
 
-    .Top__title {
-      font-size: 8vw;
-      width: 97%;
-      margin-left: auto;
-      margin-right:auto ;
-      height: 30vh;
-    }
+  .Top__title {
+    font-size: 8vw;
+    width: 97%;
+    margin-left: auto;
+    margin-right:auto ;
+    height: 30vh;
+  }
 
-    .cp_arrows {
-        height: 10vh;
-        vertical-align: bottom;
-    }
+  .cp_arrows {
+    height: 10vh;
+    vertical-align: bottom;
+  }
 
-    .Profil__Content__img {
-        width:  35vh;
-        height: 35vh
-    }
-
-    .Content__Title {
+  .Content__Title {
     font-size: 10vw;
-        margin-bottom: 0px;
-    }
+    margin-bottom: 0px;
+  }
 
   .Work__Contents p {
     font-size: 1vh
-    }
+  }
 
   .Work__desc
-    {
+  {
     font-size: 3.5vw;
-    }
+  }  
 
-    .Work__Contents__items__desc {
-        margin-top: 0px;
-    }
+  .Work__Contents__items__desc {
+    margin-top: 0px;
+  }
 
-    .Work__Contents__items__desc h3 {
+  .Work__Contents__items__desc h3 {
     margin-bottom: 2vh;
   }
 
   .Work__Contents__items__desc h4 {
-        margin-bottom: 0px;
-    }
+    margin-bottom: 0px;
+  }
 
-    .Work__Contents__items__desc p {
-        font-size: 1vh
-    }
+  .Work__Contents__items__desc p {
+    font-size: 1vh
+  }
 
-    .Work__Contents__items__desc a {
-        font-size: 1vh;
-    }
+  .Work__Contents__items__desc a {
+    font-size: 1vh;
+  }
 }
