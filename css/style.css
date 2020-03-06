@@ -361,6 +361,7 @@ Profil
     width: 600px;
     height: 300px;
     text-align: left;
+  margin: auto;
 }
 
 .Profil__Content__item p {
