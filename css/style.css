@@ -605,23 +605,26 @@ SKILL
         flex-direction: column-reverse;
         padding-top: 10%;
         width: 100%;
+    height: 70vh;
     }
     
     .Profil__Content__item {
-        width: 90%;
+    width: 95%;
         margin-left: auto;
         margin-right: auto;
+    margin-top: 0px;
     }
 
     .Profil__Content__item p {
-        padding-top: 10%;
-        font-size: 15px;
+    font-size: 4vw;
     }
 
     .Profil__Content__img {
-        text-align: center;
-        width: 200px;
-        height: 200px;
+    width: 30vh;
+    height: 30vh;
+    margin-bottom: 0px;
+  }
+
     }
 }
 
