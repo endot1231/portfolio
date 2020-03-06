@@ -528,8 +528,8 @@ SKILL
     border-bottom: 10vw solid #293241;
 }
 
-.Contact {
-    height: 90vh;
+.Contact__Contents {
+  height: 60vh;
     width: 100vw;
     text-align: center;
     color: white;
