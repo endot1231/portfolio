@@ -450,11 +450,24 @@ SKILL
     color: white;
 }
 
-.Work__Contents {
+.Work__desc {
+  font-size: 20px;
+  color: #ffffff;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 13%;
+}
+
+
+.Work__Contents__items {
+  display: flex;
     width: 1024px;
-    height: 80%;
-    margin: auto;
-    color: white;
+  height: 40vh;
+  margin-right: auto;
+  margin-left: auto;
+  z-index: 2;
+  text-decoration: none;
 }
 
 .Work__Contents__items__desc {
@@ -465,12 +478,22 @@ SKILL
 
 .Work__Contents__items__desc h3 {
     font-weight: bold;
+  color: white;
+  font-size: 25px;
     margin-top: 0px;
+}
+
+.Work__Contents__items__desc h4 {
+  font-weight: bold;
+  margin-top: 0px;
     margin-bottom: 0px;
+  font-size: 20px;
+  color: white;
 }
 
 .Work__Contents__items__desc p {
     margin-top: 0px;
+  color: white;
 }
 
 .Work__Contents__items__desc a {
