@@ -78,6 +78,12 @@ html.fp-enabled,
     border-color: #fff #fff transparent transparent;
     transform: rotate(-135deg);
 }
+
+.SKill__Contents .fp-controlArrow.fp-prev 
+{
+    border-color: #000000 #000000 transparent transparent;
+}
+
 .fp-controlArrow.fp-next {
     right: 15px;
     width: 50px;
@@ -86,6 +92,12 @@ html.fp-enabled,
     border-color: #fff #fff transparent transparent;    
     transform: rotate(45deg);
 }
+
+.SKill__Contents .fp-controlArrow.fp-next
+{
+    border-color: #000000 #000000 transparent transparent;
+}
+
 .fp-scrollable {
     overflow: hidden;
     position: relative;

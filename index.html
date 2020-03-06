@@ -6,7 +6,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+    integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
   <meta charset="utf-8" />
@@ -14,235 +15,170 @@
 
 <body>
   <div id="fullpage">
-    <div class="section">
-      <div class="Top">
-        <div class="Top--title anim-typewriter" data-text="Hello,Takaaki'E,Portfolio!">Hello,Takaaki'E,Portfolio!</div>
 
+    <div class="section">
+      <div class="Top__title anim-typewriter" data-text="Hello,Takaaki'E,Portfolio!">Hello,Takaaki'E,Portfolio!</div>
         <div class="cp_arrows">
-            <div class="cp_arrow cp_bounce"></div>
+          <div class="cp_arrow cp_bounce"></div>
         </div>
-        
-        <div id="TopAfter"></div>
-      </div>
+      <div id="TopAfter"></div>
     </div>
 
     <div class="section">
-      <div class="Profil">
-        <h2 class="Content--Title">PROFILE</h2>
-        <section class="Profil__Content">
-          <div class="Profil__Content--item">
-            <p>
-              はじめまして。平成8年生まれのたかあきと申します。
-              高校卒業後、地元の工場に就職しましたが、次第にプログラミング
-              に興味を持ちIT企業に転職。現職ではWPFを使用してのデスクトップ
-              アプリケーションの開発を行っております。現在は、フルスタックエンジニア
-              を目指しています。
-            </p>
-          </div>
-          <img class="Profil__Content--img" src="img/style.jpg" />
-        </section>
-
-        <div id="ProfilAfter"></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="Skill">
-        <h2 class="Content--Title">SKILL</h2>
-        <div class="SKill__Contents">
-
-          <div class="charts1">
-
-            <div class="chart">
-              <h3>C#</h3>
-              <canvas id="c1"></canvas>
-              <p>70%</p>
-            </div>
-
-            <div class="chart">
-              <h3>DB</h3>
-              <canvas id="c2"></canvas>
-              <p>50%</p>
-            </div>
-
-            <div class="chart">
-              <h3>HTML&CSS</h3>
-              <canvas id="c3"></canvas>
-              <p>60%</p>
-            </div>
-          </div>
-
-          <div class="charts2">
-
-            <div class="chart">
-              <h3>Javascript</h3>
-              <canvas id="c4"></canvas>
-              <p>40%</p>
-            </div>
-
-            <div class="chart">
-              <h3>PHP</h3>
-              <canvas id="c5"></canvas>
-              <p>40%</p>
-            </div>
-
-          </div>
-        </div>
-        <div id="SkillAfter"></div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="Work">
-      
-        <div class="Work__Contents">
-          <h2 class="Content--Title">WORK</h2>
-          <p>これまで作成したサイト等をご紹介いたします!
-            <br>使用した技術などはGitHubのREADMEをご参照ください!
+      <h2 class="Content__Title">PROFILE</h2>
+      <section class="Profil__Content">
+        <div class="Profil__Content__item">
+          <p>
+            はじめまして。平成8年生まれのたかあきと申します。
+            高校卒業後、地元の工場に就職しましたが、次第にプログラミング
+            に興味を持ちIT企業に転職。現職ではWPFを使用してのデスクトップ
+            アプリケーションの開発を行っております。現在は、フルスタックエンジニア
+            を目指しています。
           </p>
-
-          <div class="slide" data-anchor="slide1">
-            <div class="Work__Contents--items">
-              <img src="img/work3.png" />
-              <div class="Work__Contents--items--desc">
-                <h3>作詞・作曲SNS</h3>
-                <p>
-                  Laravelを使用し、作詞・作曲のSNSを作成しました。インフラはConoha VPS と　Conoha オブジェクトストレージを
-                  使用し構築しています。基本的なUI等はTwitterを参考にし作成しました。
-                </p>
-
-                <h3>URL</h3>
-                <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
-                  レスポンシブデザインに対応しています。デザインはサイトを参考にし作成を行いました。
-                </a>
-
-                <h3>GitHub</h3>
-                <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
-                  レスポンシブデザインに対応しています。デザインはサイトを参考にし作成を行いました。
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide" data-anchor="slide2">
-            <div class="Work__Contents--items">
-              <img src="img/work1.png" />
-              <div class="Work__Contents--items--desc">
-                <h3>練習用サイト</h3>
-                <p>練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
-                  レスポンシブデザインに対応しています。デザインは<a href="http://isutoku.co.jp/">こちらのサイト</a>を参考にし作成を行いました。
-                </p>
-
-                <h3>URL</h3>
-                <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
-                  レスポンシブデザインに対応しています。デザインはサイトを参考にし作成を行いました。
-                </a>
-
-                <h3>GitHub</h3>
-                <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
-                  レスポンシブデザインに対応しています。デザインはサイトを参考にし作成を行いました。
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div class="slide" data-anchor="slide3">
-            <div class="Work__Contents--items">
-              <img src="img/work2.png" />
-              <div class="Work__Contents--items--desc">
-                <h3>ポートフォリオ</h3>
-                <p>自己紹介用のポートフォリオ。学習のためCSSのフレームワークを使用せず、
-                  　閲覧する際に分かりやすいシンプルな構成になるように心掛け作成しました。
-                </p>
-
-                <h3>URL</h3>
-                <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
-                  レスポンシブデザインに対応しています。デザインは<a href="http://isutoku.co.jp/">こちらのサイト</a>を参考にし作成を行いました。
-                </a>
-
-                <h3>GitHub</h3>
-                <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
-                  レスポンシブデザインに対応しています。デザインはサイトを参考にし作成を行いました。
-                </a>
-              </div>
-            </div>
-          </div>
-
-      
-
         </div>
-        <div id="WorkAfter"></div>
-      </div>
+        <img class="Profil__Content__img" src="img/style.jpg" />
+      </section>
+      <div id="ProfilAfter"></div>
     </div>
 
     <div class="section">
-      <div class="Contact">
-        <h2 class="Content--Title">CONTACT</h2>
-        <div class="Contact__Contents">
+      <h2 class="Content__Title">SKILL</h2>
+      <div id="SKill__Contents__Chart">
+        <canvas id="c1"></canvas>
+      </div>
+      <div id="SkillAfter"></div>
+    </div>
 
-          <div class="Contact__Contents--item">
-            <p><i class="fab fa-github"></i><br>GitHub</p>
-            <a href="https://github.com/endot1231">https://github.com/endot1231</a>
+    <div class="section">
+      <h2 class="Content__Title color-white">WORK</h2>
+      <div class="Work__desc">
+        <p>これまで作成したサイト等をご紹介いたします!
+          <br>使用した技術などはGitHubのREADMEをご参照ください!
+        </p>
+      </div>
+
+      <div class="slide">
+        <div class="Work__Contents__items">
+          <img src="img/work3.png" />
+          <div class="Work__Contents__items__desc">
+            <h3>作詞・作曲SNS</h3>
+
+            <h4>URL</h4>
+            <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
+              レスポンシブデザインに対応しています。デザインはサイトを参考にし作成を行いました。
+            </a>
+
+            <h4>GitHub</h4>
+            <a href="https://github.com/endot1231/matchingApp">https://github.com/endot1231/matchingApp</a>
           </div>
+        </div>
+      </div>
 
-          <div class="Contact__Contents--item">
-            <p><i class="fab fa-twitter"></i><br>Twitter</p>
-            <a href="https://twitter.com/taka37661334">https://twitter.com/taka37661334</a>
+      <div class="slide">
+        <div class="Work__Contents__items">
+          <img src="img/work1.png" />
+          <div class="Work__Contents__items__desc">
+            <h3>練習用サイト</h3>
+
+            <h4>URL</h4>
+            <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
+              レスポンシブデザインに対応しています。デザインはサイトを参考にし作成を行いました。
+            </a>
+
+            <h4>GitHub</h4>
+            <a href="https://github.com/endot1231/practiceSite">https://github.com/endot1231/practiceSite</a>
           </div>
+        </div>
+      </div>
 
-          <div class="Contact__Contents--item">
-            <p><i class="far fa-envelope"></i><br>Mail</p>
-            <p>endot1231@Gmail.com</p>
+      <div class="slide">
+        <div class="Work__Contents__items">
+          <img src="img/portFolio.PNG" />
+          <div class="Work__Contents__items__desc">
+            <h3>ポートフォリオ</h3>
+
+            <h4>URL</h4>
+            <a href="#">練習用に作成したサイト。FlexBoxやハンバーガーメニューを使用し、
+              レスポンシブデザインに対応しています。デザインは<a href="http://isutoku.co.jp/">こちらのサイト</a>を参考にし作成を行いました。
+            </a>
+
+            <h4>GitHub</h4>
+            <a href="https://github.com/endot1231/portfolio">https://github.com/endot1231/portfolio</a>
           </div>
+        </div>
+      </div>
 
+      <div id="WorkAfter"></div>
+    </div>
+
+    <div class="section">
+      <h2 class="Content__Title color-white">CONTACT</h2>
+      <div class="Contact__Contents">
+
+        <div class="Contact__Contents__item">
+          <p><i class="fab fa-github"></i><br>GitHub</p>
+          <a href="https://github.com/endot1231">https://github.com/endot1231</a>
         </div>
 
-        <div id="ContactAfter"></div>
+        <div class="Contact__Contents__item">
+          <p><i class="fab fa-twitter"></i><br>Twitter</p>
+          <a href="https://twitter.com/taka37661334">https://twitter.com/taka37661334</a>
+        </div>
+
+        <div class="Contact__Contents__item">
+          <p><i class="far fa-envelope"></i><br>Mail</p>
+          <p>endot1231@Gmail.com</p>
+        </div>
       </div>
-    </div>
-  </div>
-
-  <nav class="Navi">
-    <ul id="Navi__Content">
-      <li class="Navi__Content--item">
-        <a href="#Top" id="Top">
-          <div></div>
-        </a>
-      </li>
-      <li class="Navi__Content--item">
-        <a href="#Profil" id="Profil">
-          <div></div>
-        </a>
-      </li>
-      <li class="Navi__Content--item">
-        <a href="#Skill" id="Skill">
-          <div></div>
-        </a>
-      </li>
-      <li class="Navi__Content--item">
-        <a href="#Work" id="Work">
-          <div></div>
-        </a>
-      </li>
-      <li class="Navi__Content--item">
-        <a href="#Contact" id="Contact">
-          <div></div>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
-  <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
   
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-  <script src="js/script.js"></script>
+      <div id="ContactAfter"></div>
+    </div>
+
+    <nav class="Navi">
+      <ul id="Navi__Content">
+
+        <li class="Navi__Content__item">
+          <a href="#Top" id="Top">
+            <div></div>
+          </a>
+        </li>
+        
+        <li class="Navi__Content__item">
+          <a href="#Profil" id="Profil">
+            <div></div>
+          </a>
+        </li>
+
+        <li class="Navi__Content__item">
+          <a href="#Skill" id="Skill">
+            <div></div>
+          </a>
+        </li>
+
+        <li class="Navi__Content__item">
+          <a href="#Work" id="Work">
+            <div></div>
+          </a>
+        </li>
+
+        <li class="Navi__Content__item">
+          <a href="#Contact" id="Contact">
+            <div></div>
+          </a>
+        </li>
+
+      </ul>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/easings.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/vendors/scrolloverflow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.8/fullpage.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
