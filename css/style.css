@@ -562,8 +562,11 @@ SKILL
   margin:auto;
     }
 
-    .Work__Contents {
-        width: 100%;
+  .Work__Contents__items
+  {
+    width: 768px;
+    flex-flow: column;
+    padding: 0;
     }
 
   .Work__Contents__items img {
