@@ -566,21 +566,25 @@ SKILL
         width: 100%;
     }
 
-    .Work__Contents__items {
-        width: 90%;
-        height: 100%;
-        flex-direction: column;
+  .Work__Contents__items img {
+    position: relative;
+    margin: 0 auto;
     }
 
     .Work__Contents__items__desc {
-        margin-top: 30px;
+    width: 100%;
         margin-left: 0px;
+    text-align: left;
     }
 
-    .Work__Contents__items img {
-        margin-right: auto;
-        margin-left: auto;
+  .Work__Contents__items__desc h3
+  {
+    width: 100%;
+    text-align: center;
+    color: white;
+    
     }
+
 }
 
 
