@@ -609,12 +609,4 @@ SKILL
   .Work__Contents__items__desc h4 {
     margin-bottom: 0px;
   }
-
-  .Work__Contents__items__desc p {
-    font-size: 1vh
-  }
-
-  .Work__Contents__items__desc a {
-    font-size: 1vh;
-  }
 }
