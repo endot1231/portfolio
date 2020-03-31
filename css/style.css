@@ -577,7 +577,7 @@ SKILL
     margin-left: auto;
     margin-right:auto ;
     height: 30vh;
-  }
+    }
 
   .cp_arrows {
     height: 10vh;
@@ -585,7 +585,7 @@ SKILL
   }
 
   .Content__Title {
-    font-size: 10vw;
+    font-size: 7vw;
     margin-bottom: 0px;
   }
 
