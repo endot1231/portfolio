@@ -55,11 +55,11 @@ function create() {
    myChart = new Chart(ctx, {
       type: "horizontalBar", // 水平棒グラフ
       data: {
-          labels:  ["C#", "MySQL", "HTML&CSS", "Jquery", "Laravel", "Linux","GitHub","Vps","Aws"],
+          labels:  ["C#", "MySQL", "HTML&CSS", "Jquery","Vue.js", "Laravel", "Linux","GitHub","Vps","Aws"],
           datasets: [
               {
-                  data: [6, 4, 5, 3, 5,4,3,2,2],
-                  backgroundColor: ["#ee6c4d", "#ee6c4d", "#ee6c4d", "#ee6c4d", "#ee6c4d","#ee6c4d","#ee6c4d","#ee6c4d","#ee6c4d"]
+                  data: [6, 4, 5, 3, 3,5,4,3,2,2],
+                  backgroundColor: ["#ee6c4d", "#ee6c4d", "#ee6c4d", "#ee6c4d", "#ee6c4d", "#ee6c4d","#ee6c4d","#ee6c4d","#ee6c4d","#ee6c4d"]
               }
           ]
       },
